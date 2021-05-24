@@ -1,0 +1,172 @@
+.filters {
+    background-color: #FFFFFF;
+    height: 70px;
+    width: 100%;
+    border: solid 1px #DDDDDD;
+    border-radius: 4px;
+    position: relative;
+}
+
+/*-------------------- Button styling --------------------*/
+.filters button{
+    font-size: 18px;
+    background-color: #FF5A5F;
+    color: #FFFFFF;
+    height: 48px;
+    width: 20%;
+    border: none;
+    border-radius: 4px;
+    position: absolute;
+    top: 50%;
+    margin-top: -24px;
+    right: 30px;
+}
+
+.filters button:hover {
+    opacity: 0.9;
+}
+
+/*-------------------- Heading styling --------------------*/
+.filters h3 {
+    font-weight: 600;
+    position: relative;
+    padding-top: 6%;
+    padding-left: 15%;
+    margin: auto;
+}
+
+.filters h4 {
+    font-weight: 400;
+    font-size: 14px;
+    padding-left: 15%;
+    padding-top: 1%;
+    margin: auto;
+}
+
+.filters ul{
+    padding-left: 25px;
+    margin-left: 0;
+    list-style: none;
+}
+
+/*----------------- Locations filter styling -----------------*/
+.filters .locations {
+    height: 100%;
+    width: 25%;
+    border-right: solid 1px #DDDDDD;
+    position: absolute;
+}
+
+.filters .locations .popover{
+    /* visibility: hidden; */
+    display: none;
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    width: 100%;
+    top: 100.5%;
+    left: -1px;
+    list-style: none;
+    background-color: #FAFAFA;
+    border: solid 1px #DDDDDD;
+    border-radius: 4px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    min-height: 300px;
+    max-height: 300px;
+    z-index: 1;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.filters .locations .popover::-webkit-scrollbar {
+  display: none;
+}
+
+.filters .locations:hover .popover{
+    display: block;
+}
+
+.locations .popover h2{
+    margin: 0;
+    padding: 0;
+    padding-top: 3%;
+    padding-left: 3%;
+}
+
+.locations .popover > li{
+    padding-bottom: 10%;
+}
+
+.locations .popover li li{
+    padding-left: 5%;
+    padding-top: 5%;
+}
+
+/* Elipsis */
+.locations h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*-------------------- Amenities filter styling --------------------*/
+.filters .amenities {
+    height: 100%;
+    width: 25%;
+    left: 25%;
+    position: absolute;
+}
+
+.filters .amenities .popover{
+    display: none;
+    position: absolute;
+    width: 100%;
+    top: 100.5%;
+    left: 0.5px;
+    list-style: none;
+    background-color: #FAFAFA;
+    border: solid 1px #DDDDDD;
+    border-radius: 4px;
+    padding-bottom: 1px;
+    padding-top: 1px;
+    overflow-y: scroll;
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;  /* Firefox */
+    min-height: 300px;
+    max-height: 300px;
+    z-index: 1;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.filters .amenities .popover::-webkit-scrollbar {
+  display: none;
+}
+
+.filters .amenities:hover .popover{
+    display: block;
+}
+
+.amenities .popover li{
+    padding-top: 2%;
+}
+
+/* Elipsis */
+.amenities h4 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+/*--------------- Set appropiate spacing from checkbox. ---------------*/
+input[type="checkbox" i] {
+    margin-right: 10px;
+}
+
+/* /\* Set 10px space between chekcbox and text*\/ */
+/* .amenities .popover ul li span{ */
+/*     position: relative; */
+/*     left: 10px; */
+/* } */
